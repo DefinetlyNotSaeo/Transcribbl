@@ -16,7 +16,7 @@ import shutil
 root = tk.Tk()
 root.geometry('205x220')
 root.resizable(False, False)
-root.title("VTT")
+root.title("Transcribbl")
 
 videoFile = Path()
 
@@ -114,7 +114,7 @@ else:
     tkinter.messagebox.showerror("Błąd FFMPEG", "Nie znaleziono FFMPEG, program zostanie wyłączony.")
     sys.exit(1)
 
-logo = tk.Label(root, text="VTT", font=("Segoe UI", 14, 'bold'))
+logo = tk.Label(root, text="Transcribbl", font=("Segoe UI", 14, 'bold'))
 logo.grid(row=0, column=0, columnspan=2, pady=6)
 
 AskFile = tk.Button(root, text="Wybierz plik", command=loadFile)
